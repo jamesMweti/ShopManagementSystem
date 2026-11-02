@@ -1,0 +1,214 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class ucUsers
+    Inherits System.Windows.Forms.UserControl
+
+    'Form/UserControl overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer.
+    'It can be modified using the Windows Form Designer. Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        pnlBody = New System.Windows.Forms.Panel()
+        dgvUsers = New System.Windows.Forms.DataGridView()
+        pnlButtons = New System.Windows.Forms.Panel()
+        btnEdit = New System.Windows.Forms.Button()
+        btnDelete = New System.Windows.Forms.Button()
+        btnRefresh = New System.Windows.Forms.Button()
+        btnResetPassword = New System.Windows.Forms.Button()
+        pnlHeader = New System.Windows.Forms.Panel()
+        lblUsersTitle = New System.Windows.Forms.Label()
+        lblSubtitle = New System.Windows.Forms.Label()
+        btnAddUser = New System.Windows.Forms.Button()
+        pnlBody.SuspendLayout()
+        CType(dgvUsers, ComponentModel.ISupportInitialize).BeginInit()
+        pnlButtons.SuspendLayout()
+        pnlHeader.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' pnlBody
+        ' 
+        pnlBody.BackColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        pnlBody.Controls.Add(dgvUsers)
+        pnlBody.Controls.Add(pnlButtons)
+        pnlBody.Dock = System.Windows.Forms.DockStyle.Fill
+        pnlBody.Location = New System.Drawing.Point(0, 84)
+        pnlBody.Name = "pnlBody"
+        pnlBody.Padding = New System.Windows.Forms.Padding(24, 4, 24, 16)
+        pnlBody.Size = New System.Drawing.Size(1000, 556)
+        pnlBody.TabIndex = 0
+        ' 
+        ' dgvUsers
+        ' 
+        dgvUsers.ColumnHeadersHeight = 34
+        dgvUsers.Dock = System.Windows.Forms.DockStyle.Fill
+        dgvUsers.Location = New System.Drawing.Point(24, 4)
+        dgvUsers.Name = "dgvUsers"
+        dgvUsers.RowHeadersWidth = 62
+        dgvUsers.Size = New System.Drawing.Size(952, 478)
+        dgvUsers.TabIndex = 0
+        ' 
+        ' pnlButtons
+        ' 
+        pnlButtons.Controls.Add(btnEdit)
+        pnlButtons.Controls.Add(btnDelete)
+        pnlButtons.Controls.Add(btnRefresh)
+        pnlButtons.Controls.Add(btnResetPassword)
+        pnlButtons.Dock = System.Windows.Forms.DockStyle.Bottom
+        pnlButtons.Location = New System.Drawing.Point(24, 482)
+        pnlButtons.Name = "pnlButtons"
+        pnlButtons.Size = New System.Drawing.Size(952, 58)
+        pnlButtons.TabIndex = 1
+        ' 
+        ' btnEdit
+        ' 
+        btnEdit.BackColor = Drawing.Color.Purple
+        btnEdit.Cursor = System.Windows.Forms.Cursors.Hand
+        btnEdit.FlatAppearance.BorderSize = 0
+        btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        btnEdit.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        btnEdit.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        btnEdit.Location = New System.Drawing.Point(0, 12)
+        btnEdit.Name = "btnEdit"
+        btnEdit.Size = New System.Drawing.Size(100, 38)
+        btnEdit.TabIndex = 0
+        btnEdit.Text = "Edit"
+        btnEdit.UseVisualStyleBackColor = False
+        ' 
+        ' btnDelete
+        ' 
+        btnDelete.BackColor = Drawing.Color.FromArgb(CByte(214), CByte(40), CByte(40))
+        btnDelete.Cursor = System.Windows.Forms.Cursors.Hand
+        btnDelete.FlatAppearance.BorderSize = 0
+        btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        btnDelete.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        btnDelete.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        btnDelete.Location = New System.Drawing.Point(110, 12)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New System.Drawing.Size(110, 38)
+        btnDelete.TabIndex = 1
+        btnDelete.Text = "Delete"
+        btnDelete.UseVisualStyleBackColor = False
+        ' 
+        ' btnRefresh
+        ' 
+        btnRefresh.BackColor = Drawing.Color.FromArgb(CByte(30), CByte(100), CByte(220))
+        btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
+        btnRefresh.FlatAppearance.BorderSize = 0
+        btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        btnRefresh.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        btnRefresh.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        btnRefresh.Location = New System.Drawing.Point(230, 12)
+        btnRefresh.Name = "btnRefresh"
+        btnRefresh.Size = New System.Drawing.Size(115, 38)
+        btnRefresh.TabIndex = 2
+        btnRefresh.Text = "Refresh"
+        btnRefresh.UseVisualStyleBackColor = False
+        ' 
+        ' btnResetPassword
+        ' 
+        btnResetPassword.BackColor = Drawing.Color.FromArgb(CByte(30), CByte(100), CByte(220))
+        btnResetPassword.Cursor = System.Windows.Forms.Cursors.Hand
+        btnResetPassword.FlatAppearance.BorderSize = 0
+        btnResetPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        btnResetPassword.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        btnResetPassword.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        btnResetPassword.Location = New System.Drawing.Point(355, 12)
+        btnResetPassword.Name = "btnResetPassword"
+        btnResetPassword.Size = New System.Drawing.Size(180, 38)
+        btnResetPassword.TabIndex = 3
+        btnResetPassword.Text = "🔑  Reset Password"
+        btnResetPassword.UseVisualStyleBackColor = False
+        ' 
+        ' pnlHeader
+        ' 
+        pnlHeader.BackColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        pnlHeader.Controls.Add(lblUsersTitle)
+        pnlHeader.Controls.Add(lblSubtitle)
+        pnlHeader.Controls.Add(btnAddUser)
+        pnlHeader.Dock = System.Windows.Forms.DockStyle.Top
+        pnlHeader.Location = New System.Drawing.Point(0, 0)
+        pnlHeader.Name = "pnlHeader"
+        pnlHeader.Size = New System.Drawing.Size(1000, 84)
+        pnlHeader.TabIndex = 1
+        ' 
+        ' lblUsersTitle
+        ' 
+        lblUsersTitle.AutoSize = True
+        lblUsersTitle.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblUsersTitle.Location = New System.Drawing.Point(24, 10)
+        lblUsersTitle.Name = "lblUsersTitle"
+        lblUsersTitle.Size = New System.Drawing.Size(328, 46)
+        lblUsersTitle.TabIndex = 0
+        lblUsersTitle.Text = "Users Management"
+        ' 
+        ' lblSubtitle
+        ' 
+        lblSubtitle.AutoSize = True
+        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Location = New System.Drawing.Point(27, 50)
+        lblSubtitle.Name = "lblSubtitle"
+        lblSubtitle.Size = New System.Drawing.Size(282, 28)
+        lblSubtitle.TabIndex = 1
+        lblSubtitle.Text = "Manage system users and roles"
+        ' 
+        ' btnAddUser
+        ' 
+        btnAddUser.Anchor = System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right
+        btnAddUser.BackColor = Drawing.Color.Purple
+        btnAddUser.Cursor = System.Windows.Forms.Cursors.Hand
+        btnAddUser.FlatAppearance.BorderSize = 0
+        btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        btnAddUser.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        btnAddUser.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        btnAddUser.Location = New System.Drawing.Point(816, 22)
+        btnAddUser.Name = "btnAddUser"
+        btnAddUser.Size = New System.Drawing.Size(160, 38)
+        btnAddUser.TabIndex = 2
+        btnAddUser.Text = "+  Add User"
+        btnAddUser.UseVisualStyleBackColor = False
+        ' 
+        ' ucUsers
+        ' 
+        AutoScaleDimensions = New System.Drawing.SizeF(144F, 144F)
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        BackColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        Controls.Add(pnlBody)
+        Controls.Add(pnlHeader)
+        Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        Name = "ucUsers"
+        Size = New System.Drawing.Size(1000, 640)
+        pnlBody.ResumeLayout(False)
+        CType(dgvUsers, ComponentModel.ISupportInitialize).EndInit()
+        pnlButtons.ResumeLayout(False)
+        pnlHeader.ResumeLayout(False)
+        pnlHeader.PerformLayout()
+        ResumeLayout(False)
+    End Sub
+
+    Friend WithEvents pnlBody As System.Windows.Forms.Panel
+    Friend WithEvents dgvUsers As System.Windows.Forms.DataGridView
+    Friend WithEvents pnlButtons As System.Windows.Forms.Panel
+    Friend WithEvents btnEdit As System.Windows.Forms.Button
+    Friend WithEvents btnDelete As System.Windows.Forms.Button
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents btnResetPassword As System.Windows.Forms.Button
+    Friend WithEvents pnlHeader As System.Windows.Forms.Panel
+    Friend WithEvents lblUsersTitle As System.Windows.Forms.Label
+    Friend WithEvents lblSubtitle As System.Windows.Forms.Label
+    Friend WithEvents btnAddUser As System.Windows.Forms.Button
+
+End Class

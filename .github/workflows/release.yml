@@ -1,0 +1,28 @@
+name: Build and Release
+
+# Push a tag such as v1.0.0 and GitHub builds the app and publishes a Release with a downloadable zip.
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Publish (self-contained, no .NET install needed by users)
+        run: dotnet publish ShopManagementSystem/ShopManagementSystem.vbproj -c Release -r win-x64 --self-contained true -o publish
+      - name: Zip
+        run: Compress-Archive -Path publish/* -DestinationPath ShopManagementSystem-win-x64.zip
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ShopManagementSystem-win-x64.zip
+          generate_release_notes: true

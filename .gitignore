@@ -1,0 +1,11 @@
+# Build output
+bin/
+obj/
+publish/
+*.zip
+# Visual Studio
+.vs/
+*.user
+*.suo
+# Never commit credentials
+dbconfig.json

@@ -1,0 +1,110 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>ShopManagementSystem</RootNamespace>
+    <AssemblyName>ShopManagementSystem</AssemblyName>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OptionStrict>Off</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionInfer>On</OptionInfer>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.6.1" />
+    <EmbeddedResource Include="schema.sql" />
+  </ItemGroup>
+
+  <!-- Lets Visual Studio open each screen in the Toolbox designer and nests the .Designer.vb files -->
+  <ItemGroup>
+    <Compile Update="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\frmSignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmSignUp.Designer.vb">
+      <DependentUpon>frmSignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucDashboard.Designer.vb">
+      <DependentUpon>ucDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucProducts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucProducts.Designer.vb">
+      <DependentUpon>ucProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucCategories.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucCategories.Designer.vb">
+      <DependentUpon>ucCategories.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucCustomers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucCustomers.Designer.vb">
+      <DependentUpon>ucCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucSuppliers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucSuppliers.Designer.vb">
+      <DependentUpon>ucSuppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucSales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucSales.Designer.vb">
+      <DependentUpon>ucSales.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucInventory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucInventory.Designer.vb">
+      <DependentUpon>ucInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucReports.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucReports.Designer.vb">
+      <DependentUpon>ucReports.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucUsers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucUsers.Designer.vb">
+      <DependentUpon>ucUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Modules\ucSettings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Modules\ucSettings.Designer.vb">
+      <DependentUpon>ucSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\frmReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmReceipt.Designer.vb">
+      <DependentUpon>frmReceipt.vb</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
