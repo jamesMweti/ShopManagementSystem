@@ -23,7 +23,7 @@ Public Class frmMain
 
     Private Sub Navigate(key As String)
         If key = "Logout" Then
-            If Ui.Confirm("Log out of your account?") Then
+            If Ui.Confirm("Are you sure you want to log out?") Then
                 LoggedOut = True
                 AppSession.SignOut()
                 Close()
