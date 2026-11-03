@@ -130,21 +130,21 @@ Partial Class ucProducts
         ' lblProductsTitle
         ' 
         lblProductsTitle.AutoSize = True
-        lblProductsTitle.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblProductsTitle.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
         lblProductsTitle.Location = New System.Drawing.Point(24, 10)
         lblProductsTitle.Name = "lblProductsTitle"
-        lblProductsTitle.Size = New System.Drawing.Size(383, 46)
+        lblProductsTitle.Size = New System.Drawing.Size(417, 50)
         lblProductsTitle.TabIndex = 0
-        lblProductsTitle.Text = "Products Management"
+        lblProductsTitle.Text = "PRODUCTS MANAGEMENT"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(298, 28)
+        lblSubtitle.Size = New System.Drawing.Size(313, 31)
         lblSubtitle.TabIndex = 1
         lblSubtitle.Text = "Add, update or remove products"
         ' 

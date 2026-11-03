@@ -65,7 +65,7 @@ Partial Class frmMain
         ' 
         ' flpNav
         ' 
-        flpNav.BackColor = Drawing.Color.Purple
+        flpNav.BackColor = Drawing.Color.RebeccaPurple
         flpNav.Controls.Add(btnDashboard)
         flpNav.Controls.Add(btnProducts)
         flpNav.Controls.Add(btnCategories)
@@ -293,7 +293,7 @@ Partial Class frmMain
         ' 
         ' pnlBrand
         ' 
-        pnlBrand.BackColor = Drawing.Color.Purple
+        pnlBrand.BackColor = Drawing.Color.RebeccaPurple
         pnlBrand.Controls.Add(lblBrand)
         pnlBrand.Dock = System.Windows.Forms.DockStyle.Top
         pnlBrand.Location = New System.Drawing.Point(0, 0)
@@ -304,9 +304,9 @@ Partial Class frmMain
         ' lblBrand
         ' 
         lblBrand.AutoSize = True
-        lblBrand.BackColor = Drawing.Color.Purple
+        lblBrand.BackColor = Drawing.Color.RebeccaPurple
         lblBrand.Font = New System.Drawing.Font("MV Boli", 12F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblBrand.ForeColor = Drawing.Color.DarkGray
+        lblBrand.ForeColor = Drawing.Color.Thistle
         lblBrand.Location = New System.Drawing.Point(14, 12)
         lblBrand.Name = "lblBrand"
         lblBrand.Size = New System.Drawing.Size(165, 93)

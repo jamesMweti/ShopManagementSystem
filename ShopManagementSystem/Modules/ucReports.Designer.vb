@@ -149,7 +149,7 @@ Partial Class ucReports
         ' 
         ' lblTotalSales
         ' 
-        lblTotalSales.BackColor = Drawing.SystemColors.Highlight
+        lblTotalSales.BackColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblTotalSales.Dock = System.Windows.Forms.DockStyle.Fill
         lblTotalSales.Font = New System.Drawing.Font("Segoe UI", 20F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
         lblTotalSales.ForeColor = Drawing.Color.Purple
@@ -162,7 +162,7 @@ Partial Class ucReports
         ' 
         ' lblTotalCaption
         ' 
-        lblTotalCaption.BackColor = Drawing.SystemColors.Highlight
+        lblTotalCaption.BackColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblTotalCaption.Dock = System.Windows.Forms.DockStyle.Top
         lblTotalCaption.Font = New System.Drawing.Font("Segoe UI", 13F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
         lblTotalCaption.Location = New System.Drawing.Point(0, 0)
@@ -272,21 +272,21 @@ Partial Class ucReports
         ' lblReportsTitle
         ' 
         lblReportsTitle.AutoSize = True
-        lblReportsTitle.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblReportsTitle.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
         lblReportsTitle.Location = New System.Drawing.Point(24, 10)
         lblReportsTitle.Name = "lblReportsTitle"
-        lblReportsTitle.Size = New System.Drawing.Size(144, 46)
+        lblReportsTitle.Size = New System.Drawing.Size(160, 50)
         lblReportsTitle.TabIndex = 0
-        lblReportsTitle.Text = "Reports"
+        lblReportsTitle.Text = "REPORTS"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(199, 28)
+        lblSubtitle.Size = New System.Drawing.Size(207, 31)
         lblSubtitle.TabIndex = 1
         lblSubtitle.Text = "View business reports"
         ' 

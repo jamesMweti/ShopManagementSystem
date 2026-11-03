@@ -147,23 +147,23 @@ Partial Class ucUsers
         ' lblUsersTitle
         ' 
         lblUsersTitle.AutoSize = True
-        lblUsersTitle.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblUsersTitle.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
         lblUsersTitle.Location = New System.Drawing.Point(24, 10)
         lblUsersTitle.Name = "lblUsersTitle"
-        lblUsersTitle.Size = New System.Drawing.Size(328, 46)
+        lblUsersTitle.Size = New System.Drawing.Size(333, 50)
         lblUsersTitle.TabIndex = 0
-        lblUsersTitle.Text = "Users Management"
+        lblUsersTitle.Text = "USER MANAGEMENT"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(282, 28)
+        lblSubtitle.Size = New System.Drawing.Size(345, 31)
         lblSubtitle.TabIndex = 1
-        lblSubtitle.Text = "Manage system users and roles"
+        lblSubtitle.Text = "Manage system users and their roles"
         ' 
         ' btnAddUser
         ' 

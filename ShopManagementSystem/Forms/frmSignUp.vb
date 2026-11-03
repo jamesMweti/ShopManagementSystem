@@ -60,4 +60,5 @@ Public Class frmSignUp
     Private Sub lnkLogin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkLogin.LinkClicked
         Close()
     End Sub
+
 End Class

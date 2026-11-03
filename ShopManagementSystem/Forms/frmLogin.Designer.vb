@@ -31,8 +31,8 @@ Partial Class frmLogin
         lnkSignUp = New System.Windows.Forms.LinkLabel()
         pnlBrand = New System.Windows.Forms.Panel()
         lblLogo = New System.Windows.Forms.Label()
-        lblSystemName = New System.Windows.Forms.Label()
         lblTagline = New System.Windows.Forms.Label()
+        lblSystemName = New System.Windows.Forms.Label()
         pnlForm.SuspendLayout()
         pnlBrand.SuspendLayout()
         SuspendLayout()
@@ -47,9 +47,9 @@ Partial Class frmLogin
         pnlForm.Controls.Add(lblNoAccount)
         pnlForm.Controls.Add(lnkSignUp)
         pnlForm.Dock = System.Windows.Forms.DockStyle.Fill
-        pnlForm.Location = New System.Drawing.Point(340, 0)
+        pnlForm.Location = New System.Drawing.Point(391, 0)
         pnlForm.Name = "pnlForm"
-        pnlForm.Size = New System.Drawing.Size(480, 500)
+        pnlForm.Size = New System.Drawing.Size(549, 501)
         pnlForm.TabIndex = 0
         ' 
         ' lblWelcome
@@ -134,48 +134,48 @@ Partial Class frmLogin
         ' 
         ' pnlBrand
         ' 
-        pnlBrand.BackColor = Drawing.Color.Purple
-        pnlBrand.Controls.Add(lblLogo)
+        pnlBrand.BackColor = Drawing.Color.RebeccaPurple
         pnlBrand.Controls.Add(lblSystemName)
+        pnlBrand.Controls.Add(lblLogo)
         pnlBrand.Controls.Add(lblTagline)
         pnlBrand.Dock = System.Windows.Forms.DockStyle.Left
         pnlBrand.Location = New System.Drawing.Point(0, 0)
         pnlBrand.Name = "pnlBrand"
-        pnlBrand.Size = New System.Drawing.Size(340, 500)
+        pnlBrand.Size = New System.Drawing.Size(391, 501)
         pnlBrand.TabIndex = 1
         ' 
         ' lblLogo
         ' 
         lblLogo.Font = New System.Drawing.Font("Segoe UI Emoji", 60F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
         lblLogo.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(204), CByte(0))
-        lblLogo.Location = New System.Drawing.Point(0, 50)
+        lblLogo.Location = New System.Drawing.Point(12, 5)
         lblLogo.Name = "lblLogo"
-        lblLogo.Size = New System.Drawing.Size(340, 130)
+        lblLogo.Size = New System.Drawing.Size(340, 152)
         lblLogo.TabIndex = 0
         lblLogo.Text = ChrW(55357) & ChrW(57042)
         lblLogo.TextAlign = Drawing.ContentAlignment.MiddleCenter
         ' 
-        ' lblSystemName
-        ' 
-        lblSystemName.Font = New System.Drawing.Font("Segoe UI", 26F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSystemName.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
-        lblSystemName.Location = New System.Drawing.Point(0, 185)
-        lblSystemName.Name = "lblSystemName"
-        lblSystemName.Size = New System.Drawing.Size(340, 150)
-        lblSystemName.TabIndex = 1
-        lblSystemName.Text = "Shop" & vbCrLf & "Management" & vbCrLf & "System"
-        lblSystemName.TextAlign = Drawing.ContentAlignment.MiddleCenter
-        ' 
         ' lblTagline
         ' 
-        lblTagline.Font = New System.Drawing.Font("Segoe UI", 12F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblTagline.Font = New System.Drawing.Font("Mistral", 12F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
         lblTagline.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(204), CByte(0))
-        lblTagline.Location = New System.Drawing.Point(0, 340)
+        lblTagline.Location = New System.Drawing.Point(12, 381)
         lblTagline.Name = "lblTagline"
         lblTagline.Size = New System.Drawing.Size(340, 30)
         lblTagline.TabIndex = 2
-        lblTagline.Text = "Manage • Sell • Grow"
+        lblTagline.Text = "Manage your shop easier"
         lblTagline.TextAlign = Drawing.ContentAlignment.MiddleCenter
+        ' 
+        ' lblSystemName
+        ' 
+        lblSystemName.Font = New System.Drawing.Font("Lucida Sans Typewriter", 20F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSystemName.ForeColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
+        lblSystemName.Location = New System.Drawing.Point(3, 157)
+        lblSystemName.Name = "lblSystemName"
+        lblSystemName.Size = New System.Drawing.Size(385, 197)
+        lblSystemName.TabIndex = 3
+        lblSystemName.Text = "Shop" & vbCrLf & "Management" & vbCrLf & "System"
+        lblSystemName.TextAlign = Drawing.ContentAlignment.MiddleCenter
         ' 
         ' frmLogin
         ' 
@@ -183,7 +183,7 @@ Partial Class frmLogin
         AutoScaleDimensions = New System.Drawing.SizeF(144F, 144F)
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         BackColor = Drawing.Color.FromArgb(CByte(255), CByte(255), CByte(255))
-        ClientSize = New System.Drawing.Size(820, 500)
+        ClientSize = New System.Drawing.Size(940, 501)
         Controls.Add(pnlForm)
         Controls.Add(pnlBrand)
         Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
@@ -208,7 +208,7 @@ Partial Class frmLogin
     Friend WithEvents lnkSignUp As System.Windows.Forms.LinkLabel
     Friend WithEvents pnlBrand As System.Windows.Forms.Panel
     Friend WithEvents lblLogo As System.Windows.Forms.Label
-    Friend WithEvents lblSystemName As System.Windows.Forms.Label
     Friend WithEvents lblTagline As System.Windows.Forms.Label
+    Friend WithEvents lblSystemName As System.Windows.Forms.Label
 
 End Class

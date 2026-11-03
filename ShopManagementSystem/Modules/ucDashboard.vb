@@ -51,4 +51,5 @@ Public Class ucDashboard
         dgvTopProducts.DataSource = ranked
         dgvTopProducts.Columns("#").FillWeight = 20
     End Sub
+
 End Class

@@ -5,7 +5,6 @@ Imports System.Windows.Forms
 Imports MySqlConnector
 
 Public Module Theme
-    Public ReadOnly Purple As Color = Color.FromArgb(128, 35, 146)
     Public ReadOnly Green As Color = Color.FromArgb(0, 110, 50)
     Public ReadOnly LightGreen As Color = Color.FromArgb(226, 240, 217)
     Public ReadOnly Gold As Color = Color.FromArgb(255, 204, 0)
@@ -87,8 +86,8 @@ Public Module Ui
         g.ColumnHeadersHeight = 36
         g.RowTemplate.Height = 30
         g.DefaultCellStyle.Font = New Font("Segoe UI", 10)
-        g.DefaultCellStyle.SelectionBackColor = Color.FromArgb(200, 230, 201)
-        g.DefaultCellStyle.SelectionForeColor = Color.Black
+        g.DefaultCellStyle.SelectionBackColor = Color.RebeccaPurple
+        g.DefaultCellStyle.SelectionForeColor = Color.Lavender
     End Sub
 
     Public Function Money(value As Object) As String

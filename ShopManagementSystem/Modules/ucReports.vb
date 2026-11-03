@@ -189,7 +189,7 @@ Public Class ucReports
             Dim rowH As Single = 22
 
             ' header row
-            Using headBrush As New SolidBrush(Theme.Purple)
+            Using headBrush As New SolidBrush(color:=Color.RebeccaPurple)
                 g.FillRectangle(headBrush, m.Left, y, m.Width, rowH)
             End Using
             For c As Integer = 0 To colCount - 1

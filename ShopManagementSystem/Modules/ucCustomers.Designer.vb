@@ -130,21 +130,21 @@ Partial Class ucCustomers
         ' lblCustomersTitle
         ' 
         lblCustomersTitle.AutoSize = True
-        lblCustomersTitle.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblCustomersTitle.Location = New System.Drawing.Point(24, 10)
+        lblCustomersTitle.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblCustomersTitle.Location = New System.Drawing.Point(15, 10)
         lblCustomersTitle.Name = "lblCustomersTitle"
-        lblCustomersTitle.Size = New System.Drawing.Size(410, 46)
+        lblCustomersTitle.Size = New System.Drawing.Size(420, 50)
         lblCustomersTitle.TabIndex = 0
-        lblCustomersTitle.Text = "Customers Management"
+        lblCustomersTitle.Text = "CUSTOMER MANAGEMENT"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(222, 28)
+        lblSubtitle.Size = New System.Drawing.Size(230, 31)
         lblSubtitle.TabIndex = 1
         lblSubtitle.Text = "Manage your customers"
         ' 

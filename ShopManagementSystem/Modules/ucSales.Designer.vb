@@ -34,6 +34,7 @@ Partial Class ucSales
         btnRemoveItem = New System.Windows.Forms.Button()
         pnlSummary = New System.Windows.Forms.Panel()
         pnlTotals = New System.Windows.Forms.Panel()
+        lblTotal = New System.Windows.Forms.Label()
         lblSubtotalCaption = New System.Windows.Forms.Label()
         lblSubtotal = New System.Windows.Forms.Label()
         lblDiscountCaption = New System.Windows.Forms.Label()
@@ -48,7 +49,6 @@ Partial Class ucSales
         lblSubtitle = New System.Windows.Forms.Label()
         lblDate = New System.Windows.Forms.Label()
         dtpSaleDate = New System.Windows.Forms.DateTimePicker()
-        lblTotal = New System.Windows.Forms.Label()
         pnlBody.SuspendLayout()
         CType(dgvSaleItems, ComponentModel.ISupportInitialize).BeginInit()
         pnlItemButtons.SuspendLayout()
@@ -189,7 +189,7 @@ Partial Class ucSales
         ' 
         ' pnlTotals
         ' 
-        pnlTotals.BackColor = Drawing.Color.FromArgb(CByte(226), CByte(240), CByte(217))
+        pnlTotals.BackColor = Drawing.Color.Maroon
         pnlTotals.Controls.Add(lblTotal)
         pnlTotals.Controls.Add(lblSubtotalCaption)
         pnlTotals.Controls.Add(lblSubtotal)
@@ -202,6 +202,17 @@ Partial Class ucSales
         pnlTotals.Name = "pnlTotals"
         pnlTotals.Size = New System.Drawing.Size(410, 326)
         pnlTotals.TabIndex = 0
+        ' 
+        ' lblTotal
+        ' 
+        lblTotal.AutoSize = True
+        lblTotal.Font = New System.Drawing.Font("Segoe UI", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblTotal.ForeColor = Drawing.Color.Cyan
+        lblTotal.Location = New System.Drawing.Point(125, 180)
+        lblTotal.Name = "lblTotal"
+        lblTotal.Size = New System.Drawing.Size(128, 38)
+        lblTotal.TabIndex = 7
+        lblTotal.Text = "Ksh 0.00"
         ' 
         ' lblSubtotalCaption
         ' 
@@ -216,6 +227,7 @@ Partial Class ucSales
         ' lblSubtotal
         ' 
         lblSubtotal.Font = New System.Drawing.Font("Segoe UI", 12F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtotal.ForeColor = Drawing.Color.Cyan
         lblSubtotal.Location = New System.Drawing.Point(120, 54)
         lblSubtotal.Name = "lblSubtotal"
         lblSubtotal.Size = New System.Drawing.Size(170, 30)
@@ -245,7 +257,7 @@ Partial Class ucSales
         ' 
         lblTotalCaption.AutoSize = True
         lblTotalCaption.Font = New System.Drawing.Font("Segoe UI", 16F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblTotalCaption.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblTotalCaption.ForeColor = Drawing.Color.Black
         lblTotalCaption.Location = New System.Drawing.Point(16, 175)
         lblTotalCaption.Name = "lblTotalCaption"
         lblTotalCaption.Size = New System.Drawing.Size(103, 45)
@@ -264,7 +276,7 @@ Partial Class ucSales
         btnCompleteSale.Name = "btnCompleteSale"
         btnCompleteSale.Size = New System.Drawing.Size(288, 52)
         btnCompleteSale.TabIndex = 6
-        btnCompleteSale.Text = "Complete Sale"
+        btnCompleteSale.Text = "Process Sale"
         btnCompleteSale.UseVisualStyleBackColor = False
         ' 
         ' pnlCustomer
@@ -311,21 +323,21 @@ Partial Class ucSales
         ' lblNewSale
         ' 
         lblNewSale.AutoSize = True
-        lblNewSale.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblNewSale.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
         lblNewSale.Location = New System.Drawing.Point(24, 10)
         lblNewSale.Name = "lblNewSale"
-        lblNewSale.Size = New System.Drawing.Size(166, 46)
+        lblNewSale.Size = New System.Drawing.Size(117, 50)
         lblNewSale.TabIndex = 0
-        lblNewSale.Text = "New Sale"
+        lblNewSale.Text = "SALES"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(261, 28)
+        lblSubtitle.Size = New System.Drawing.Size(275, 31)
         lblSubtitle.TabIndex = 1
         lblSubtitle.Text = "Process a customer purchase"
         ' 
@@ -334,7 +346,7 @@ Partial Class ucSales
         lblDate.Anchor = System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right
         lblDate.AutoSize = True
         lblDate.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblDate.Location = New System.Drawing.Point(780, 30)
+        lblDate.Location = New System.Drawing.Point(773, 31)
         lblDate.Name = "lblDate"
         lblDate.Size = New System.Drawing.Size(57, 28)
         lblDate.TabIndex = 2
@@ -348,17 +360,6 @@ Partial Class ucSales
         dtpSaleDate.Name = "dtpSaleDate"
         dtpSaleDate.Size = New System.Drawing.Size(140, 34)
         dtpSaleDate.TabIndex = 3
-        ' 
-        ' lblTotal
-        ' 
-        lblTotal.AutoSize = True
-        lblTotal.Font = New System.Drawing.Font("Segoe UI", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblTotal.ForeColor = Drawing.Color.Green
-        lblTotal.Location = New System.Drawing.Point(125, 180)
-        lblTotal.Name = "lblTotal"
-        lblTotal.Size = New System.Drawing.Size(128, 38)
-        lblTotal.TabIndex = 7
-        lblTotal.Text = "Ksh 0.00"
         ' 
         ' ucSales
         ' 

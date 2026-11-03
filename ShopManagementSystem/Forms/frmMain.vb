@@ -48,8 +48,8 @@ Public Class frmMain
             Dim b = TryCast(c, Button)
             If b Is Nothing Then Continue For
             Dim active As Boolean = (b.Name = "btn" & key)
-            b.BackColor = If(active, Theme.Gold, Theme.Purple)
-            b.ForeColor = If(active, Theme.Purple, Color.White)
+            b.BackColor = If(active, Theme.Gold, Color.RebeccaPurple)
+            b.ForeColor = If(active, Color.RebeccaPurple, Color.White)
         Next
         Text = "Shop Management System - " & key
 

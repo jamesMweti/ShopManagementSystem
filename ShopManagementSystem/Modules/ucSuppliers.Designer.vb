@@ -130,21 +130,21 @@ Partial Class ucSuppliers
         ' lblSuppliersTitle
         ' 
         lblSuppliersTitle.AutoSize = True
-        lblSuppliersTitle.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSuppliersTitle.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
         lblSuppliersTitle.Location = New System.Drawing.Point(24, 10)
         lblSuppliersTitle.Name = "lblSuppliersTitle"
-        lblSuppliersTitle.Size = New System.Drawing.Size(169, 46)
+        lblSuppliersTitle.Size = New System.Drawing.Size(186, 50)
         lblSuppliersTitle.TabIndex = 0
-        lblSuppliersTitle.Text = "Suppliers"
+        lblSuppliersTitle.Text = "SUPPLIERS"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(299, 28)
+        lblSubtitle.Size = New System.Drawing.Size(311, 31)
         lblSubtitle.TabIndex = 1
         lblSubtitle.Text = "Manage who you buy stock from"
         ' 

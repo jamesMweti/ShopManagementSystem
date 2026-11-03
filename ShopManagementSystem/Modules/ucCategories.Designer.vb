@@ -130,21 +130,21 @@ Partial Class ucCategories
         ' lblCategoriesTitle
         ' 
         lblCategoriesTitle.AutoSize = True
-        lblCategoriesTitle.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblCategoriesTitle.Location = New System.Drawing.Point(24, 10)
+        lblCategoriesTitle.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblCategoriesTitle.Location = New System.Drawing.Point(27, 0)
         lblCategoriesTitle.Name = "lblCategoriesTitle"
-        lblCategoriesTitle.Size = New System.Drawing.Size(189, 46)
+        lblCategoriesTitle.Size = New System.Drawing.Size(212, 50)
         lblCategoriesTitle.TabIndex = 0
-        lblCategoriesTitle.Text = "Categories"
+        lblCategoriesTitle.Text = "CATEGORIES"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(196, 28)
+        lblSubtitle.Size = New System.Drawing.Size(204, 31)
         lblSubtitle.TabIndex = 1
         lblSubtitle.Text = "Group your products"
         ' 

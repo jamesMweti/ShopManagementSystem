@@ -61,7 +61,7 @@ Public Class BarChart
 
         Dim slot As Double = plot.Width / _values.Count
         Dim barW As Integer = Math.Max(4, CInt(slot * 0.6))
-        Using br As New SolidBrush(Theme.Green)
+        Using br As New SolidBrush(Theme.Gold)
             Using sf As New StringFormat()
                 sf.Alignment = StringAlignment.Center
                 sf.Trimming = StringTrimming.EllipsisCharacter

@@ -91,6 +91,7 @@ Partial Class ucDashboard
         ' 
         ' pnlTopProducts
         ' 
+        pnlTopProducts.BackColor = Drawing.Color.Maroon
         pnlTopProducts.Controls.Add(dgvTopProducts)
         pnlTopProducts.Controls.Add(lblTopTitle)
         pnlTopProducts.Dock = System.Windows.Forms.DockStyle.Right
@@ -102,7 +103,7 @@ Partial Class ucDashboard
         ' 
         ' dgvTopProducts
         ' 
-        dgvTopProducts.BackgroundColor = Drawing.SystemColors.Highlight
+        dgvTopProducts.BackgroundColor = Drawing.Color.Maroon
         dgvTopProducts.ColumnHeadersHeight = 34
         dgvTopProducts.Dock = System.Windows.Forms.DockStyle.Fill
         dgvTopProducts.Location = New System.Drawing.Point(16, 32)
@@ -115,6 +116,7 @@ Partial Class ucDashboard
         ' 
         lblTopTitle.Dock = System.Windows.Forms.DockStyle.Top
         lblTopTitle.Font = New System.Drawing.Font("Segoe UI", 11F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblTopTitle.ForeColor = Drawing.SystemColors.ActiveCaption
         lblTopTitle.Location = New System.Drawing.Point(16, 0)
         lblTopTitle.Name = "lblTopTitle"
         lblTopTitle.Size = New System.Drawing.Size(324, 32)
@@ -137,7 +139,7 @@ Partial Class ucDashboard
         ' 
         ' pnlTotalSales
         ' 
-        pnlTotalSales.BackColor = Drawing.Color.FromArgb(CByte(226), CByte(240), CByte(217))
+        pnlTotalSales.BackColor = Drawing.Color.FromArgb(CByte(255), CByte(224), CByte(192))
         pnlTotalSales.Controls.Add(lblTotalSalesCaption)
         pnlTotalSales.Controls.Add(lblTotalSalesValue)
         pnlTotalSales.Location = New System.Drawing.Point(0, 4)
@@ -149,27 +151,27 @@ Partial Class ucDashboard
         ' lblTotalSalesCaption
         ' 
         lblTotalSalesCaption.AutoSize = True
-        lblTotalSalesCaption.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblTotalSalesCaption.ForeColor = Drawing.Color.FromArgb(CByte(95), CByte(105), CByte(100))
+        lblTotalSalesCaption.Font = New System.Drawing.Font("Century Gothic", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblTotalSalesCaption.ForeColor = Drawing.Color.Black
         lblTotalSalesCaption.Location = New System.Drawing.Point(16, 14)
         lblTotalSalesCaption.Name = "lblTotalSalesCaption"
-        lblTotalSalesCaption.Size = New System.Drawing.Size(113, 28)
+        lblTotalSalesCaption.Size = New System.Drawing.Size(111, 23)
         lblTotalSalesCaption.TabIndex = 0
         lblTotalSalesCaption.Text = "Total Sales"
         ' 
         ' lblTotalSalesValue
         ' 
         lblTotalSalesValue.AutoSize = True
-        lblTotalSalesValue.Font = New System.Drawing.Font("Segoe UI", 22F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblTotalSalesValue.Font = New System.Drawing.Font("Yu Gothic", 16F, Drawing.FontStyle.Bold)
         lblTotalSalesValue.Location = New System.Drawing.Point(14, 44)
         lblTotalSalesValue.Name = "lblTotalSalesValue"
-        lblTotalSalesValue.Size = New System.Drawing.Size(50, 60)
+        lblTotalSalesValue.Size = New System.Drawing.Size(36, 42)
         lblTotalSalesValue.TabIndex = 1
         lblTotalSalesValue.Text = "0"
         ' 
         ' pnlProducts
         ' 
-        pnlProducts.BackColor = Drawing.Color.FromArgb(CByte(219), CByte(234), CByte(254))
+        pnlProducts.BackColor = Drawing.Color.Gray
         pnlProducts.Controls.Add(lblProductsCaption)
         pnlProducts.Controls.Add(lblProductsValue)
         pnlProducts.Location = New System.Drawing.Point(302, 4)
@@ -181,27 +183,27 @@ Partial Class ucDashboard
         ' lblProductsCaption
         ' 
         lblProductsCaption.AutoSize = True
-        lblProductsCaption.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblProductsCaption.ForeColor = Drawing.Color.FromArgb(CByte(95), CByte(105), CByte(100))
+        lblProductsCaption.Font = New System.Drawing.Font("Century Gothic", 10F, Drawing.FontStyle.Bold)
+        lblProductsCaption.ForeColor = Drawing.Color.Black
         lblProductsCaption.Location = New System.Drawing.Point(16, 14)
         lblProductsCaption.Name = "lblProductsCaption"
-        lblProductsCaption.Size = New System.Drawing.Size(95, 28)
+        lblProductsCaption.Size = New System.Drawing.Size(93, 23)
         lblProductsCaption.TabIndex = 0
         lblProductsCaption.Text = "Products"
         ' 
         ' lblProductsValue
         ' 
         lblProductsValue.AutoSize = True
-        lblProductsValue.Font = New System.Drawing.Font("Segoe UI", 22F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblProductsValue.Font = New System.Drawing.Font("Yu Gothic", 16F, Drawing.FontStyle.Bold)
         lblProductsValue.Location = New System.Drawing.Point(14, 44)
         lblProductsValue.Name = "lblProductsValue"
-        lblProductsValue.Size = New System.Drawing.Size(50, 60)
+        lblProductsValue.Size = New System.Drawing.Size(36, 42)
         lblProductsValue.TabIndex = 1
         lblProductsValue.Text = "0"
         ' 
         ' pnlCustomers
         ' 
-        pnlCustomers.BackColor = Drawing.Color.FromArgb(CByte(237), CByte(226), CByte(250))
+        pnlCustomers.BackColor = Drawing.Color.FromArgb(CByte(192), CByte(255), CByte(255))
         pnlCustomers.Controls.Add(lblCustomersCaption)
         pnlCustomers.Controls.Add(lblCustomersValue)
         pnlCustomers.Location = New System.Drawing.Point(609, 4)
@@ -213,21 +215,21 @@ Partial Class ucDashboard
         ' lblCustomersCaption
         ' 
         lblCustomersCaption.AutoSize = True
-        lblCustomersCaption.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblCustomersCaption.ForeColor = Drawing.Color.FromArgb(CByte(95), CByte(105), CByte(100))
+        lblCustomersCaption.Font = New System.Drawing.Font("Century Gothic", 10F, Drawing.FontStyle.Bold)
+        lblCustomersCaption.ForeColor = Drawing.Color.Black
         lblCustomersCaption.Location = New System.Drawing.Point(16, 14)
         lblCustomersCaption.Name = "lblCustomersCaption"
-        lblCustomersCaption.Size = New System.Drawing.Size(111, 28)
+        lblCustomersCaption.Size = New System.Drawing.Size(113, 23)
         lblCustomersCaption.TabIndex = 0
         lblCustomersCaption.Text = "Customers"
         ' 
         ' lblCustomersValue
         ' 
         lblCustomersValue.AutoSize = True
-        lblCustomersValue.Font = New System.Drawing.Font("Segoe UI", 22F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblCustomersValue.Font = New System.Drawing.Font("Yu Gothic", 20F, Drawing.FontStyle.Bold)
         lblCustomersValue.Location = New System.Drawing.Point(14, 44)
         lblCustomersValue.Name = "lblCustomersValue"
-        lblCustomersValue.Size = New System.Drawing.Size(50, 60)
+        lblCustomersValue.Size = New System.Drawing.Size(45, 52)
         lblCustomersValue.TabIndex = 1
         lblCustomersValue.Text = "0"
         ' 
@@ -246,21 +248,21 @@ Partial Class ucDashboard
         ' lblLowStockCaption
         ' 
         lblLowStockCaption.AutoSize = True
-        lblLowStockCaption.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblLowStockCaption.Font = New System.Drawing.Font("Century Gothic", 10F, Drawing.FontStyle.Bold)
         lblLowStockCaption.ForeColor = Drawing.Color.Black
         lblLowStockCaption.Location = New System.Drawing.Point(16, 14)
         lblLowStockCaption.Name = "lblLowStockCaption"
-        lblLowStockCaption.Size = New System.Drawing.Size(108, 28)
+        lblLowStockCaption.Size = New System.Drawing.Size(108, 23)
         lblLowStockCaption.TabIndex = 0
         lblLowStockCaption.Text = "Low Stock"
         ' 
         ' lblLowStockValue
         ' 
         lblLowStockValue.AutoSize = True
-        lblLowStockValue.Font = New System.Drawing.Font("Segoe UI", 22F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblLowStockValue.Font = New System.Drawing.Font("Yu Gothic", 20F, Drawing.FontStyle.Bold)
         lblLowStockValue.Location = New System.Drawing.Point(14, 44)
         lblLowStockValue.Name = "lblLowStockValue"
-        lblLowStockValue.Size = New System.Drawing.Size(50, 60)
+        lblLowStockValue.Size = New System.Drawing.Size(45, 52)
         lblLowStockValue.TabIndex = 1
         lblLowStockValue.Text = "0"
         ' 
@@ -278,23 +280,23 @@ Partial Class ucDashboard
         ' lblWelcome
         ' 
         lblWelcome.AutoSize = True
-        lblWelcome.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
-        lblWelcome.Location = New System.Drawing.Point(24, 10)
+        lblWelcome.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblWelcome.Location = New System.Drawing.Point(24, 0)
         lblWelcome.Name = "lblWelcome"
-        lblWelcome.Size = New System.Drawing.Size(178, 46)
+        lblWelcome.Size = New System.Drawing.Size(183, 50)
         lblWelcome.TabIndex = 0
-        lblWelcome.Text = "Welcome!"
+        lblWelcome.Text = "WELCOME!"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(399, 28)
+        lblSubtitle.Size = New System.Drawing.Size(413, 31)
         lblSubtitle.TabIndex = 1
-        lblSubtitle.Text = "Here's what's happening in your shop today."
+        lblSubtitle.Text = "An overview of the happenings in your shop"
         ' 
         ' lblDate
         ' 

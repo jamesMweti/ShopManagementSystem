@@ -208,21 +208,21 @@ Partial Class ucSettings
         ' lblSettingsTitle
         ' 
         lblSettingsTitle.AutoSize = True
-        lblSettingsTitle.Font = New System.Drawing.Font("Segoe UI", 17F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSettingsTitle.Font = New System.Drawing.Font("Segoe Print", 14F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
         lblSettingsTitle.Location = New System.Drawing.Point(24, 10)
         lblSettingsTitle.Name = "lblSettingsTitle"
-        lblSettingsTitle.Size = New System.Drawing.Size(216, 46)
+        lblSettingsTitle.Size = New System.Drawing.Size(239, 50)
         lblSettingsTitle.TabIndex = 0
-        lblSettingsTitle.Text = "⚙  Settings"
+        lblSettingsTitle.Text = "⚙  SETTINGS"
         ' 
         ' lblSubtitle
         ' 
         lblSubtitle.AutoSize = True
-        lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 10F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
-        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(0), CByte(110), CByte(50))
+        lblSubtitle.Font = New System.Drawing.Font("Segoe Print", 9F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, CByte(0))
+        lblSubtitle.ForeColor = Drawing.Color.FromArgb(CByte(192), CByte(64), CByte(0))
         lblSubtitle.Location = New System.Drawing.Point(27, 50)
         lblSubtitle.Name = "lblSubtitle"
-        lblSubtitle.Size = New System.Drawing.Size(243, 28)
+        lblSubtitle.Size = New System.Drawing.Size(252, 31)
         lblSubtitle.TabIndex = 1
         lblSubtitle.Text = "Account and shop settings"
         ' 
