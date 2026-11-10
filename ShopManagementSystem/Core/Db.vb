@@ -9,7 +9,7 @@ Public Class DbConfig
     Public Property Server As String = "localhost"
     Public Property Port As Integer = 3306
     Public Property User As String = "root"
-    Public Property Password As String = ""
+    Public Property Password As String = "Germ.s#41"
     Public Property Database As String = "shop_management_db"
 End Class
 

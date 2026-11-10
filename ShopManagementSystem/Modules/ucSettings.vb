@@ -46,7 +46,7 @@ Public Class ucSettings
                 Return
             End If
             Db.SetSetting("ShopName", txtShopName.Text.Trim())
-            Ui.Info("Shop details saved.")
+            Ui.Info("Changes saved.")
         Catch ex As Exception
             Ui.ShowError(ex)
         End Try
